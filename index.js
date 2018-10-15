@@ -15,5 +15,5 @@ const driversByRevenue = function(drivers) {
 const driversByName = function(drivers) {
   let newArray = []
   drivers.forEach(driver => newArray.push(driver.name);
-  return newArray;
+  return newArray.sort((a, b) => a.localeCompare(b));
 }
