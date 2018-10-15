@@ -7,11 +7,11 @@ const logDriversByHometown = function(drivers, town) {
 }
 
 const newArrayForDrivers = function(drivers) {
-  let newArray = []
+  let newArray = [];
 
   drivers.forEach(driver => newArray.push(driver));
 
-  return newArray
+  return newArray;
 }
 
 const driversByRevenue = function(drivers) {
@@ -20,8 +20,8 @@ const driversByRevenue = function(drivers) {
 
 // const driversByName = function(drivers) {
 //   let newArray = []
-// 
+//
 //   drivers.forEach(driver => newArray.push(driver));
-// 
+//
 //   return newArray.sort((a, b) => a.localeCompare(b));
 // }
