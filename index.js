@@ -8,12 +8,16 @@ const logDriversByHometown = function(drivers, town) {
 
 const driversByRevenue = function(drivers) {
   let newArray = []
+  
   drivers.forEach(driver => newArray.push(driver));
+  
   return newArray.sort((a, b) => a.revenue - b.revenue);
 }
 
-// const driversByName = function(drivers) {
-//   let newArray = []
-//   drivers.forEach(driver => newArray.push(driver.name);
-//   return newArray.sort((a, b) => a.localeCompare(b));
-// }
+const driversByName = function(drivers) {
+  let newArray = []
+  
+  drivers.forEach(driver => newArray.push(driver.name));
+  
+  return newArray.sort((a, b) => a.localeCompare(b));
+}
