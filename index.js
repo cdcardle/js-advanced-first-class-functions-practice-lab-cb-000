@@ -8,13 +8,12 @@ const logDriversByHometown = function(drivers, town) {
 
 const driversByRevenue = function(drivers) {
   let newArray = []
-  drivers.forEach(function(driver) {
-    newArray.push(driver);
-  })
+  drivers.forEach(driver => newArray.push(driver));
   return newArray.sort((a, b) => a.revenue - b.revenue);
 }
 
 const driversByName = function(drivers) {
-  let newArray = drivers.forEach(driver => newArray.push(driver.name);
+  let newArray = []
+  drivers.forEach(driver => newArray.push(driver.name);
   return newArray;
 }
