@@ -6,6 +6,10 @@ const newArrayForDrivers = function(drivers) {
   return newArray;
 }
 
+function sumUp() {
+
+}
+
 const logDriverNames = function(drivers) {
   drivers.forEach(driver => console.log(driver.name));
 }
@@ -27,5 +31,5 @@ const totalRevenue = function(drivers) {
 
   drivers.forEach(driver => newArray.push(driver.revenue));
 
-  return newArray.reduce(newArray, 0);
+  return newArray.reduce((a, b) => a + b);
 }
