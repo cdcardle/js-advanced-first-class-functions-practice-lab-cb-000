@@ -23,5 +23,9 @@ const driversByName = function(drivers) {
 }
 
 const totalRevenue = function(drivers) {
-  return newArrayForDrivers(drivers).reduce(driver => driver.revenue);
+  let newArray = [];
+
+  drivers.forEach(driver => newArray.push(driver.revenue));
+
+  return newArray.reduce();
 }
