@@ -15,7 +15,6 @@ const driversByRevenue = function(drivers) {
 }
 
 const driversByName = function(drivers) {
-  let newArray = []
-  drivers.forEach(driver => newArray.push(driver.name);
-  return newArray.sort();
+  let newArray = drivers.forEach(driver => newArray.push(driver.name);
+  return newArray;
 }
