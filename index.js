@@ -27,5 +27,5 @@ const totalRevenue = function(drivers) {
 
   drivers.forEach(driver => newArray.push(driver.revenue));
 
-  return newArray.reduce();
+  return newArray.reduce(newArray, 0);
 }
