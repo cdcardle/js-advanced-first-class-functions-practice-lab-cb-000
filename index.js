@@ -7,5 +7,5 @@ const logDriversByHometown = function(drivers, town) {
 }
 
 const driversByRevenue = function(drivers) {
-  return drivers.sort((driver) => driver.revenue)
+  return drivers.sort((a, b) => a.revenue - b.revenue)
 }
