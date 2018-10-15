@@ -1,11 +1,3 @@
-const logDriverNames = function(drivers) {
-  drivers.forEach(driver => console.log(driver.name));
-}
-
-const logDriversByHometown = function(drivers, town) {
-  drivers.forEach(driver => ((driver.hometown === town) ? console.log(driver.name) : 0));
-}
-
 const newArrayForDrivers = function(drivers) {
   let newArray = [];
 
@@ -14,14 +6,18 @@ const newArrayForDrivers = function(drivers) {
   return newArray;
 }
 
+const logDriverNames = function(drivers) {
+  drivers.forEach(driver => console.log(driver.name));
+}
+
+const logDriversByHometown = function(drivers, town) {
+  drivers.forEach(driver => ((driver.hometown === town) ? console.log(driver.name) : 0));
+}
+
 const driversByRevenue = function(drivers) {
   return newArrayForDrivers(drivers).sort((a, b) => a.revenue - b.revenue);
 }
 
-// const driversByName = function(drivers) {
-//   let newArray = []
-//
-//   drivers.forEach(driver => newArray.push(driver));
-//
-//   return newArray.sort((a, b) => a.localeCompare(b));
-// }
+const driversByName = function(drivers) {
+  return newArrayForDrivers(drivers).sort((a, b) => a.localeCompare(b));
+}
