@@ -15,7 +15,7 @@ const newArrayForDrivers = function(drivers) {
 }
 
 const driversByRevenue = function(drivers) {
-  newArrayForDrivers(drivers).sort((a, b) => a.revenue - b.revenue);
+  return newArrayForDrivers(drivers).sort((a, b) => a.revenue - b.revenue);
 }
 
 // const driversByName = function(drivers) {
