@@ -19,5 +19,5 @@ const driversByName = function(drivers) {
   drivers.forEach(function(driver) {
     newArray.push(driver);
   })
-  return newArray.sort((a, b) => a.localCompare(b));
+  return newArray.sort();
 }
