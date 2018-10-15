@@ -33,3 +33,7 @@ const totalRevenue = function(drivers) {
 
   return newArray.reduce((a, b) => a + b);
 }
+
+const averageRevenue = function(drivers) {
+  return (totalRevenue(drivers) / drivers.length)
+}
